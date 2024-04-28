@@ -24,13 +24,10 @@ This app makes use of Python threads. If running under uWSGI include the --enabl
 
 ## Endpoints
 
-[Endpoints to retrieve train data and sample input and output are listed here.](https://github.com/jonthornton/MTAPI/tree/master/docs/endpoints.md)
+[Endpoints to retrieve train data and sample input and output are listed here.](https://github.com/mqazi/MTAPI/tree/master/docs/endpoints.md)
 
 ## Settings
 
-- **MTA_KEY** (required)  
-The API key provided at hhttps://api.mta.info/#/signup
-*default: None*
 
 - **STATIONS_FILE** (required)  
 Path to the JSON file containing station information. See [Generating a Stations File](#generating-a-stations-file) for more info.  
@@ -74,7 +71,7 @@ $ python make_stations_json.py stations.csv > stations.json
 
 ## Help
 
-Submit a [GitHub Issues request](https://github.com/jonthornton/MTAPI/issues). 
+Submit a [GitHub Issues request](https://github.com/mqazi/MTAPI/issues). 
 
 ## Projects
 

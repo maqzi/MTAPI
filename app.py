@@ -6,6 +6,7 @@
     Expose the MTA's real-time subway feed as a json api
 
     :copyright: (c) 2014 by Jon Thornton.
+    :copyright: (c) 2024 by maqzi.
     :license: BSD, see LICENSE for more details.
 """
 
@@ -52,7 +53,6 @@ class CustomJSONEncoder(json.JSONEncoder):
         return JSONEncoder.default(self, obj)
 
 mta = Mtapi(
-    app.config['MTA_KEY'],
     app.config['STATIONS_FILE'],
     max_trains=app.config['MAX_TRAINS'],
     max_minutes=app.config['MAX_MINUTES'],
@@ -91,7 +91,7 @@ def add_cors_header(resp):
 def index():
     return {
         'title': 'MTAPI',
-        'readme': 'Visit https://github.com/jonthornton/MTAPI for more info'
+        'readme': 'Visit https://github.com/maqzi/MTAPI for more info'
         }
 
 @app.route('/by-location', methods=['GET'])
