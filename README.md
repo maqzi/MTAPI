@@ -6,17 +6,22 @@ MTAPI is a small HTTP server that converts the [MTA's realtime subway feed](http
 
 This project is under active development and any part of the API may change. Feedback is very welcome.
 
-## Running the server
+## Running the backend
 
-MTAPI is a Flask app designed to run under Python 3.3+.
+MTAPI is a Flask app designed to run under Python 3.10+.
 
 1. Create a `settings.cfg` file. A sample is provided as `settings.cfg.sample`.
 2. Set up your environment and install dependencies.  
-`$ pyenv virtualenv 3.10.4 MTAPI`
-`$ pyenv activate MTAPI`  
-`$ poetry install`
+```
+$ pyenv virtualenv 3.10.4 MTAPI
+$ pyenv activate MTAPI`  
+$ poetry install`
+```
+
 3. Run the server  
-`$ python app.py`
+```
+$ python app.py
+```
 
 If your configuration is named something other than `settings.cfg`, set the `MTAPI_SETTINGS` env variable to your configuration path.
 
@@ -81,4 +86,4 @@ Here are some projects that use MTAPI.
 
 ## License
 
-The project is made available under the MIT license.
+The project is made available under the BSD license.
