@@ -12,9 +12,9 @@ MTAPI is a Flask app designed to run under Python 3.3+.
 
 1. Create a `settings.cfg` file. A sample is provided as `settings.cfg.sample`.
 2. Set up your environment and install dependencies.  
-`$ python3 -m venv .venv`  
-`$ source .venv/bin/activate`  
-`$ python3 -m pip install -r requirements.txt`
+`$ pyenv virtualenv 3.10.4 MTAPI`
+`$ pyenv activate MTAPI`  
+`$ poetry install`
 3. Run the server  
 `$ python app.py`
 
@@ -24,7 +24,7 @@ This app makes use of Python threads. If running under uWSGI include the --enabl
 
 ## Endpoints
 
-[Endpoints to retrieve train data and sample input and output are listed here.](https://github.com/mqazi/MTAPI/tree/master/docs/endpoints.md)
+[Endpoints to retrieve train data and sample input and output are listed here.](https://github.com/maqzi/MTAPI/tree/master/docs/endpoints.md)
 
 ## Settings
 
@@ -71,7 +71,7 @@ $ python make_stations_json.py stations.csv > stations.json
 
 ## Help
 
-Submit a [GitHub Issues request](https://github.com/mqazi/MTAPI/issues). 
+Submit a [GitHub Issues request](https://github.com/maqzi/MTAPI/issues). 
 
 ## Projects
 
